@@ -14,7 +14,7 @@
 	</properties>
 
 	<dependencies>
-		
+
 		<!-- utils -->
 		<dependency>
 			<groupId>com.alibaba</groupId>
@@ -25,6 +25,18 @@
 
 
 		<!-- Test -->
+		<dependency>
+		    <groupId>org.jmock</groupId>
+		    <artifactId>jmock-legacy</artifactId>
+		    <version>2.5.1</version>
+		    <scope>test</scope>
+		</dependency>
+		<dependency>
+		    <groupId>org.jmock</groupId>
+		    <artifactId>jmock-junit4</artifactId>
+		    <version>2.5.1</version>
+		    <scope>test</scope>
+		</dependency>
 		<dependency>
 			<groupId>org.hamcrest</groupId>
 			<artifactId>hamcrest-api</artifactId>
@@ -69,7 +81,7 @@
 					<portableConfig>src/main/resources/portable-context-config.xml</portableConfig>
 				</configuration>
 			</plugin>
-			
+
 		</plugins>
 	</build>
 
