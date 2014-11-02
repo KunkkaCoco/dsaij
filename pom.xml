@@ -4,9 +4,10 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.maxi</groupId>
 	<artifactId>dsainj</artifactId>
-	<name>data-Structurn</name>
 	<!-- data Structurn and algorithms in java -->
+	<name>data-Structurn</name>
 	<version>1.0.0</version>
+	<packaging>jar</packaging>
 	<url>http://maven.apache.org</url>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
