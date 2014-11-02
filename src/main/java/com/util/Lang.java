@@ -12,11 +12,6 @@ import java.util.Collection;
 import java.util.Date;
 import java.util.List;
 import java.util.Map;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
-import java.util.regex.PatternSyntaxException;
-
-import org.springframework.util.StringUtils;
 
 public class Lang {
 
@@ -104,22 +99,22 @@ public class Lang {
 		return clazz;
 	}
 
-	/**
-	 * 滤掉所有特殊字符
-	 * 
-	 * @param str 需要被过滤的字符串
-	 * @return 过滤后得到的字符串
-	 * @throws PatternSyntaxException
-	 */
-	public static String filterString(String str) throws PatternSyntaxException {
-		if (StringUtils.isEmpty(str)) {
-			return "";
-		}
-		String regEx = "[`~!@#$%^&*()+=|{}':;',\\[\\].<>/?~！@#￥%……&*（）——+|{}【】‘；：”“’。，、？\"《》]";
-		Pattern p = Pattern.compile(regEx);
-		Matcher m = p.matcher(str);
-		return m.replaceAll("@").trim();
-	}
+	// /**
+	// * 滤掉所有特殊字符
+	// *
+	// * @param str 需要被过滤的字符串
+	// * @return 过滤后得到的字符串
+	// * @throws PatternSyntaxException
+	// */
+	// public static String filterString(String str) throws PatternSyntaxException {
+	// if (StringUtils.isEmpty(str)) {
+	// return "";
+	// }
+	// String regEx = "[`~!@#$%^&*()+=|{}':;',\\[\\].<>/?~！@#￥%……&*（）——+|{}【】‘；：”“’。，、？\"《》]";
+	// Pattern p = Pattern.compile(regEx);
+	// Matcher m = p.matcher(str);
+	// return m.replaceAll("@").trim();
+	// }
 
 	/**
 	 * 根据生日获取年龄
