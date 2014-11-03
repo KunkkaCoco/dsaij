@@ -5,7 +5,7 @@ import java.io.IOException;
 import org.junit.Test;
 
 import com.alibaba.fastjson.JSON;
-import com.maxi.c1.BisectObj;
+import com.maxi.c01.BisectObj;
 
 public class Demo {
 

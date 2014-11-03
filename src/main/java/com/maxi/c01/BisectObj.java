@@ -1,4 +1,4 @@
-package com.maxi.c1;
+package com.maxi.c01;
 
 public class BisectObj {
 	// 有序数组

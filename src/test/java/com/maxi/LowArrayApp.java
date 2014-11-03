@@ -4,7 +4,7 @@ import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import com.maxi.c1.LowArray;
+import com.maxi.c01.LowArray;
 
 public class LowArrayApp {
 
