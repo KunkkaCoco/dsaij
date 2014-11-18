@@ -1,12 +1,11 @@
-package  com.maxi.c04;
+package com.maxi.c04;
 
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import com.maxi.c04.Stackx;
 public class StackApp {
-	
+
 	@BeforeClass
 	public static void setUpBeforeClass() throws Exception {
 		System.out.println("before test##############################################################");
@@ -18,16 +17,16 @@ public class StackApp {
 	}
 
 	@Test
-	public void test() {
+	public void test() throws Exception {
 		Stackx stackx = new Stackx(10);
-		
+
 		stackx.push(20);
 		stackx.push(40);
 		stackx.push(60);
 		stackx.push(80);
 
-		while (! stackx.isEmpty()) {
-			
+		while (!stackx.isEmpty()) {
+
 			long value = stackx.pop();
 			System.out.print(value);
 			System.out.print(" ");

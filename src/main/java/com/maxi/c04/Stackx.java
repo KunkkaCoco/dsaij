@@ -12,10 +12,15 @@ public class Stackx {
 	}
 
 	public void push(long j) {
-		stackArray[++top] = j;
+		if (!isFull()) {
+			stackArray[++top] = j;
+		}
 	}
 
-	public long pop() {
+	public long pop() throws Exception {
+		if (isEmpty()) {
+			throw new Exception(" stack  is  empty!");
+		}
 		return stackArray[top--];
 	}
 
