@@ -1,5 +1,6 @@
 package com.maxi.c05;
 
+
 public class LinkList {
 
 	private Link first;
@@ -22,6 +23,38 @@ public class LinkList {
 		Link temp = first;
 		first = first.next;
 		return temp;
+	}
+
+	public Link find(int key) {
+		Link current = first;
+		while (current.iData != key) {
+			if (current.next == null) {
+				return null;
+			} else {
+				current = current.next;
+			}
+		}
+		return current;
+	}
+
+	public Link delete(int key) {
+		Link current = first;
+		Link previous = first;
+		while (current.iData != key) {
+			if (current.next == null) {
+				return null;
+			} else {
+				previous = current;
+				current = current.next;
+			}
+		}
+		if (previous == first) {
+			first = first.next;
+		} else {
+			previous.next = current.next;
+		}
+		return current;
+
 	}
 
 	public void displayList() {
