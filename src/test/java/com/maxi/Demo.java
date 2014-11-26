@@ -18,6 +18,7 @@ public class Demo {
 		System.out.println(JSON.toJSONString(array));
 		int[] a = { 1, 2, 3, 4, 5 };
 		System.out.println(JSON.toJSONString(a));
+
 	}
 
 	@Test
@@ -37,4 +38,41 @@ public class Demo {
 		System.out.println(d.bisect(12));
 	}
 
+	public static long loop(long max) {
+		long total = 0;
+		long n = 1;
+		while (n <= max) {
+			total += n;
+			n++;
+		}
+		return total;
+	}
+
+	public static long recursion(long n, long value) {
+		if (n == 1) {
+			return value;
+		} else {
+			return recursion(n - 1, value + n);
+		}
+
+	}
+
+	public long getFactorial(long currNum, long sum) {
+		if (currNum == 0) {
+			return sum;
+		}
+
+		return getFactorial(currNum - 1, sum += currNum);
+	}
+
+	@Test
+	public void testPerformance() {
+		long start1 = System.currentTimeMillis();
+		System.out.println("=========" + System.currentTimeMillis());
+		System.out.println(loop(1000));
+		System.out.println("=========" + (System.currentTimeMillis() - start1));
+		long start2 = System.currentTimeMillis();
+		System.out.println(getFactorial(1000, 0));
+		System.out.println("=========" + (System.currentTimeMillis() - start2));
+	}
 }
