@@ -1380,4 +1380,9 @@ public class StringUtil {
 		String s = br.readLine();
 		return s;
 	}
+
+	public static int getInt() throws IOException {
+		String string = getString();
+		return Integer.parseInt(string);
+	}
 }
