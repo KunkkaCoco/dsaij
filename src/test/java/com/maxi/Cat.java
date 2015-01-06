@@ -25,7 +25,7 @@ public class Cat implements Serializable {
 	public static void main(String[] args) {
 		Cat cat = new Cat();
 		try {
-			FileOutputStream fos = new FileOutputStream("catDemo.out");
+			FileOutputStream fos = new FileOutputStream("target/catDemo.out");
 			ObjectOutputStream oos = new ObjectOutputStream(fos);
 			System.out.println(" 1> " + cat.getName());
 			cat.setName("My Cat");
@@ -35,7 +35,7 @@ public class Cat implements Serializable {
 			ex.printStackTrace();
 		}
 		try {
-			FileInputStream fis = new FileInputStream("catDemo.out");
+			FileInputStream fis = new FileInputStream("target/catDemo.out");
 			ObjectInputStream ois = new ObjectInputStream(fis);
 			cat = (Cat) ois.readObject();
 			System.out.println(" 2> " + cat.getName());
