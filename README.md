@@ -7,7 +7,7 @@ Data Structures & Algorithms in Java
 ### 执行main方法
 	#执行 com.java.Main.class  main方法
 	
-	mvn exec:java -Dexec.mainClass="com.maxi." -Dexec.args="arg0 arg1 arg2"
+	mvn exec:java -Dexec.mainClass="com.maxi.aa" -Dexec.args="arg0 arg1 arg2"
 ### sublime 运行
 		ctrl+B
 		#注意把package注释掉 

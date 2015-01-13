@@ -31,5 +31,13 @@ public class TreeApp {
 		theTree.insert(87, 1.7);
 		theTree.insert(93, 1.5);
 		theTree.insert(97, 1.5);
+
+		theTree.traverse(1);
+		theTree.traverse(2);
+		theTree.traverse(3);
+
+		System.out.println(theTree.find(33));
+		theTree.displayTree();
+
 	}
 }

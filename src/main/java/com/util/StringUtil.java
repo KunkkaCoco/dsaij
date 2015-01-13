@@ -1,6 +1,3 @@
-/**
- * Title:		luoka
- */
 package com.util;
 
 import java.io.BufferedReader;

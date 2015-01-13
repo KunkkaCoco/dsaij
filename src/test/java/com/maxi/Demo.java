@@ -75,4 +75,33 @@ public class Demo {
 		System.out.println(getFactorial(1000, 0));
 		System.out.println("=========" + (System.currentTimeMillis() - start2));
 	}
+
+	@Test
+	public void math() {
+		System.out.println(Math.floor(99.8));
+		System.out.println("return " + returnit());
+	}
+
+	public int returnit() {
+		int con = 10;
+		for (int ii = 0; ii < 10; ii++) {
+			for (int i = 0; i < 10; i++) {
+				for (int j = 0; j < 10; j++) {
+					System.out.println("int --- j=" + j);
+					if (j == 5) {
+						return j;
+					}
+				}
+				System.out.println("i=" + i);
+			}
+		}
+		return 10;
+	}
+
+	@Test
+	public void byte2string() {
+		Byte b = 0101;
+		String s = String.valueOf(b);
+		System.out.println(s);
+	}
 }
